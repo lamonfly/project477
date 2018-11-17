@@ -1,4 +1,15 @@
-﻿  glm.cpp
+﻿  Main.cpp
+c:\users\felix\downloads\project477\project477\src\main.cpp(292): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\felix\downloads\project477\project477\src\main.cpp(299): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\felix\downloads\project477\project477\src\main.cpp(333): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\felix\downloads\project477\project477\src\main.cpp(353): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\felix\downloads\project477\project477\src\main.cpp(362): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\felix\downloads\project477\project477\src\main.cpp(390): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\felix\downloads\project477\project477\src\main.cpp(393): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\felix\downloads\project477\project477\src\main.cpp(394): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\felix\downloads\project477\project477\src\main.cpp(395): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\felix\downloads\project477\project477\src\main.cpp(396): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+  glm.cpp
 c:\users\felix\downloads\project477\project477\src\glm.cpp(187): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\string.h(538): note: see declaration of 'strdup'
 c:\users\felix\downloads\project477\project477\src\glm.cpp(234): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
@@ -153,17 +164,7 @@ c:\users\felix\downloads\project477\project477\src\glm.cpp(1816): warning C4996:
   c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(2261): note: see declaration of 'sscanf'
 c:\users\felix\downloads\project477\project477\src\glm.cpp(1818): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(2261): note: see declaration of 'sscanf'
-  Main.cpp
-c:\users\felix\downloads\project477\project477\src\main.cpp(292): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\felix\downloads\project477\project477\src\main.cpp(299): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\felix\downloads\project477\project477\src\main.cpp(333): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\felix\downloads\project477\project477\src\main.cpp(353): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\felix\downloads\project477\project477\src\main.cpp(362): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\felix\downloads\project477\project477\src\main.cpp(390): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\felix\downloads\project477\project477\src\main.cpp(393): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\felix\downloads\project477\project477\src\main.cpp(394): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\felix\downloads\project477\project477\src\main.cpp(395): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\felix\downloads\project477\project477\src\main.cpp(396): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
   simpleMath.cpp
   Generating Code...
+  LINK : C:\Users\Felix\Downloads\project477\project477\Debug\Project477.exe not found or not built by the last incremental link; performing full link
   project477.vcxproj -> C:\Users\Felix\Downloads\project477\project477\Debug\Project477.exe
