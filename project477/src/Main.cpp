@@ -11,6 +11,7 @@
 #include <iostream>
 #include <cmath>
 #include <cstring>
+
 using namespace std;
 
 //Window parameters
@@ -248,8 +249,18 @@ void handleKeyPress(unsigned char key, int x, int y)
 { 
     switch(key)
     {
-        case 'm':
+        case '+':
+			// Add a pendulum ball
             break;
+		case '-':
+			// Remove a pendulum ball
+			break;
+		case 'k':
+			// Increase speed reduction 
+			break;
+		case 'j':
+			// Decrease speed reduction
+			break;
         case 'q':
             exit(0);
     }
