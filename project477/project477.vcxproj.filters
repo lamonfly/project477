@@ -21,7 +21,7 @@
     <ClInclude Include="src\glm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="pendulum.h">
+    <ClInclude Include="src\pendulum.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -35,7 +35,7 @@
     <ClCompile Include="src\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pendulum.cpp">
+    <ClCompile Include="src\pendulum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
