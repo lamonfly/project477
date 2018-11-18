@@ -80,10 +80,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="pendulum.h" />
     <ClInclude Include="src\glm.h" />
     <ClInclude Include="src\simpleMath.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="pendulum.cpp" />
     <ClCompile Include="src\glm.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\simpleMath.cpp" />
