@@ -9,6 +9,7 @@
 
 // Timestep for Euler
 static const float timeStep = 0.1f;
+static bool play = false;
 
 class pendulum
 {
@@ -27,8 +28,6 @@ private:
 	float airDrag;
 	float radius;
 
-	bool play;
-
 	Vec3 pos;
 	Vec3 prevPos;
 
@@ -36,18 +35,18 @@ private:
 
 public:
 	pendulum();
-
 	pendulum(float x, float y, float z, int number, float angle);
 
-	void calculatePosition();
-	void draw();
-
-	Vec3 getPos() const { return pos; };
 	float getX() const { return pos.x; };
 	float getTheta() const { return theta; };
 	float getRadius() const { return radius; };
-	float getOmega() const { return omega; };
+	float getO() const { return omega; };
 
+	void calculatePosition();
+	void draw();
+	int calDir();
+	void setTheta(float newTheta);
+	void setO(float newO);
 	void setPlay(bool p);
 };
 

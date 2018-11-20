@@ -13,6 +13,7 @@
 #include <cstring>
 #include <vector>
 #include "pendulum.h"
+#include "collider.h"
 
 using namespace std;
 
@@ -265,11 +266,14 @@ void handleKeyPress(unsigned char key, int x, int y)
 			// Remove a pendulum ball
 			base.pop_back();
 			break;
-		case 'k':
-			// Increase speed reduction 
+		case '1': {
+			float angle = base[0].getTheta();
+			angle--;
+			base[0].setTheta(angle);
 			break;
-		case 'j':
-			// Decrease speed reduction
+		}
+		case 'p' :
+			base[0].setPlay(true);
 			break;
         case 'q':
             exit(0);
@@ -406,26 +410,14 @@ void display()
     glLoadIdentity();
     glMultMatrixd(_matrix);
 
-    glColor3f(0.5,0.5,0.5);
-    glPushMatrix();													//draw terrain
-    glColor3f(0.7,0.7,0.7);
-	glNormal3f(0.0, 1.0, 0.0);
-    glBegin(GL_QUADS);
-    	glVertex3f(-3,-0.85,3);
-    	glVertex3f(3,-0.85,3);
-    	glVertex3f(3,-0.85,-3);
-    	glVertex3f(-3,-0.85,-3);
-    glEnd();
-	glPopMatrix();
+	// Draw other things
 
-    glPushMatrix();
-
+	// Draw pendulum
 	for (unsigned i = 0; i < base.size(); i++)
 	{
 		base[i].draw();
 	}
-    
-    glPopMatrix();
+	collider(base);
     
     glutSwapBuffers();
 }

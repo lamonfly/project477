@@ -4,8 +4,6 @@
 // Default constructor
 pendulum::pendulum()
 {
-	play = false;
-
 	initTheta = theta = -90.0; //Angle
 	omega = 0; //Angular Velocity
 
@@ -32,8 +30,6 @@ pendulum::pendulum()
 // Constructor
 pendulum::pendulum(float x, float y, float z, int number, float angle)
 {
-	play = false;
-
 	initTheta = theta = angle; //Angle
 	omega = 0; //Angular Velocity
 
@@ -102,24 +98,48 @@ void pendulum::draw()
 
 	glPushMatrix();
 	// Add texture or color here
+
+	//Draw sphere
 	glTranslatef(prevPos.x, prevPos.y, 0.0);
 	glRotatef(theta, 0.0, 0.0, 1.0);
 	glutSolidSphere(radius, 30.0f, 30.0f);
 
+	//Draw rope
 	glRotatef(-70.0f, 1.0f, 0.0f, 0.0f);
 	glTranslatef(0.0, 0.0, 0.0);
-	glColor3f(0.9f, 0.9f, 0.8f);
-	glutSolidCone(0.05f, ropeLength, 15.0f, 15.0f);
+	gluCylinder(gluNewQuadric(), 0.025f, 0.025f, ropeLength, 15.0f, 15.0f);
 
 
 	glRotatef(-45.0f, 1.0f, 0.0f, 0.0f);
 	glTranslatef(0.0, 0.0, 0.0);
-	glColor3f(0.9f, 0.9f, 0.8f);
-	glutSolidCone(0.05f, ropeLength, 15.0f, 15.0f);
+	gluCylinder(gluNewQuadric(), 0.025f, 0.025f, ropeLength, 15.0f, 15.0f);
 
 	glPopMatrix();
 }
 
+int pendulum::calDir()
+{
+	// From left
+	if (omega < -0.3){
+		return -1;
+	}
+	// From Right
+	else if (omega > 0.3){
+		return 1;
+	}
+	// No move
+	else{
+		return 0;
+	}
+}
+
+void pendulum::setTheta(float newTheta) {
+	theta = newTheta;
+}
+
+void pendulum::setO(float newO) {
+	omega = newO;
+}
 
 void pendulum::setPlay(bool p)
 {
