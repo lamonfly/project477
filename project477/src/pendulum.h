@@ -15,38 +15,36 @@ class pendulum
 {
 private:
 	// Angle variables
-	float initTheta;
-	float theta;
-	float velocity;
-	float omega;
+	float angle;
+	float aVel;
 
 	// Mass, height and length of rope
-	float mass;
-	float initHeight;
-	float height;
 	float ropeLength;
-	float airDrag;
 	float radius;
+	float mass;
+
+	// Affects movement
+	float airDrag;
+	float height;
 
 	Vec3 pos;
-	Vec3 prevPos;
 
 	float index;
 
 public:
 	pendulum();
-	pendulum(float x, float y, float z, int number, float angle);
+	pendulum(float x, float y, float z, int number, float nangle);
 
-	float getX() const { return pos.x; };
-	float getTheta() const { return theta; };
-	float getRadius() const { return radius; };
-	float getO() const { return omega; };
+	float getX() { return pos.x; };
+	float getAngle() { return angle; };
+	float getRadius() { return radius; };
+	float getAVel() { return aVel; };
 
 	void calculatePosition();
 	void draw();
 	int calDir();
-	void setTheta(float newTheta);
-	void setO(float newO);
+	void setAngle(float nangle);
+	void setAVel(float nVel);
 	void setPlay(bool p);
 };
 

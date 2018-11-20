@@ -15,11 +15,11 @@ void collider(vector<pendulum>& base) {
 
 // React to two pendulum touching each other
 void collision(pendulum& p1, pendulum& p2) {
-	float Omega1 = p1.getO();
-	float Omega2 = p2.getO();
+	float Omega1 = p1.getAVel();
+	float Omega2 = p2.getAVel();
 
 	// Force at same direction = nothing
-	if (p1.getTheta() == p2.getTheta() && p1.getO() == p2.getO() && p1.calDir() == p2.calDir()){
+	if (p1.getAngle() == p2.getAngle() && p1.getAVel() == p2.getAVel() && p1.calDir() == p2.calDir()){
 		return;
 	}
 
@@ -30,31 +30,31 @@ void collision(pendulum& p1, pendulum& p2) {
 			float tempOmega2 = Omega2 * ((p2.calDir() * p1.calDir() != p2.calDir()) + (1 * p1.calDir() == p2.calDir()));
 
 			// Move them apart
-			p1.setTheta(p1.getTheta() + (p2.getTheta() - p1.getTheta()));
+			p1.setAngle(p1.getAngle() + (p2.getAngle() - p1.getAngle()));
 
 			// Material here
-			p1.setO(tempOmega2);
-			p2.setO(tempOmega1);
+			p1.setAVel(tempOmega2);
+			p2.setAVel(tempOmega1);
 		}
 
 		// if p1 is stationary
 		else if (p1.calDir() == 0){
 			// Move them apart
-			p1.setTheta(p1.getTheta() + (p2.getTheta() - p1.getTheta()));
+			p1.setAngle(p1.getAngle() + (p2.getAngle() - p1.getAngle()));
 
 			// Material here
-			p1.setO(Omega2);
-			p2.setO(Omega1);
+			p1.setAVel(Omega2);
+			p2.setAVel(Omega1);
 		}
 
 		// if p2 is stationary
 		else if (p2.calDir() == 0){
 			// Move them apart
-			p2.setTheta(p2.getTheta() + (p1.getTheta() - p2.getTheta()));
+			p2.setAngle(p2.getAngle() + (p1.getAngle() - p2.getAngle()));
 
 			// Material here
-			p1.setO(Omega2);
-			p2.setO(Omega1);
+			p1.setAVel(Omega2);
+			p2.setAVel(Omega1);
 		}
 	}
 }

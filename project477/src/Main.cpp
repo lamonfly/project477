@@ -267,9 +267,9 @@ void handleKeyPress(unsigned char key, int x, int y)
 			base.pop_back();
 			break;
 		case '1': {
-			float angle = base[0].getTheta();
+			float angle = base[0].getAngle();
 			angle--;
-			base[0].setTheta(angle);
+			base[0].setAngle(angle);
 			break;
 		}
 		case 'p' :

@@ -1,23 +1,22 @@
 ﻿  Main.cpp
-c:\users\felix\downloads\comp477\project477\project477\src\pendulum.h(40): warning C4244: 'return': conversion from 'const double' to 'float', possible loss of data
+c:\users\felix\downloads\comp477\project477\project477\src\pendulum.h(38): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
 c:\users\felix\downloads\comp477\project477\project477\src\main.cpp(317): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
 c:\users\felix\downloads\comp477\project477\project477\src\main.cpp(324): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
 c:\users\felix\downloads\comp477\project477\project477\src\main.cpp(358): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 c:\users\felix\downloads\comp477\project477\project477\src\main.cpp(378): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 c:\users\felix\downloads\comp477\project477\project477\src\main.cpp(387): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
   collider.cpp
-c:\users\felix\downloads\comp477\project477\project477\src\pendulum.h(40): warning C4244: 'return': conversion from 'const double' to 'float', possible loss of data
+c:\users\felix\downloads\comp477\project477\project477\src\pendulum.h(38): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
   pendulum.cpp
-c:\users\felix\downloads\comp477\project477\project477\src\pendulum.h(40): warning C4244: 'return': conversion from 'const double' to 'float', possible loss of data
-c:\users\felix\downloads\comp477\project477\project477\src\pendulum.cpp(21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\felix\downloads\comp477\project477\project477\src\pendulum.cpp(51): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\felix\downloads\comp477\project477\project477\src\pendulum.cpp(59): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\felix\downloads\comp477\project477\project477\src\pendulum.cpp(74): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-c:\users\felix\downloads\comp477\project477\project477\src\pendulum.cpp(77): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-c:\users\felix\downloads\comp477\project477\project477\src\pendulum.cpp(86): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\felix\downloads\comp477\project477\project477\src\pendulum.cpp(103): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\felix\downloads\comp477\project477\project477\src\pendulum.cpp(105): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
-c:\users\felix\downloads\comp477\project477\project477\src\pendulum.cpp(110): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
-c:\users\felix\downloads\comp477\project477\project477\src\pendulum.cpp(115): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+c:\users\felix\downloads\comp477\project477\project477\src\pendulum.h(38): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+c:\users\felix\downloads\comp477\project477\project477\src\pendulum.cpp(18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\felix\downloads\comp477\project477\project477\src\pendulum.cpp(40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\felix\downloads\comp477\project477\project477\src\pendulum.cpp(44): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\felix\downloads\comp477\project477\project477\src\pendulum.cpp(54): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+c:\users\felix\downloads\comp477\project477\project477\src\pendulum.cpp(57): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+c:\users\felix\downloads\comp477\project477\project477\src\pendulum.cpp(79): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\felix\downloads\comp477\project477\project477\src\pendulum.cpp(81): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+c:\users\felix\downloads\comp477\project477\project477\src\pendulum.cpp(86): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+c:\users\felix\downloads\comp477\project477\project477\src\pendulum.cpp(91): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
   Generating Code...
   project477.vcxproj -> C:\Users\Felix\Downloads\Comp477\project477\project477\Debug\Project477.exe
