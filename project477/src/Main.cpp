@@ -11,6 +11,8 @@
 #include <iostream>
 #include <cmath>
 #include <cstring>
+#include <vector>
+#include "pendulum.h"
 
 using namespace std;
 
@@ -41,6 +43,9 @@ bool _mouseRight = false;
 double _dragPosX = 0.0;
 double _dragPosY = 0.0;
 double _dragPosZ = 0.0;
+
+// Pendulums
+vector<pendulum> base;
 
 double vlen(double x, double y, double z)
 {
@@ -221,6 +226,9 @@ void init()
      getMatrix();
      glPopMatrix();
 
+	 //Initialize ball
+	 base.push_back(pendulum(0.0, 0.0, 0.0, base.size(), 0.0));
+
 }
 
 void changeSize(int w, int h)
@@ -251,9 +259,11 @@ void handleKeyPress(unsigned char key, int x, int y)
     {
         case '+':
 			// Add a pendulum ball
+			base.push_back(pendulum(0.0, 0.0, 0.0, base.size(), 0.0));
             break;
 		case '-':
 			// Remove a pendulum ball
+			base.pop_back();
 			break;
 		case 'k':
 			// Increase speed reduction 
@@ -410,7 +420,10 @@ void display()
 
     glPushMatrix();
 
-    //Draw model myDefMesh.glDraw(meshModel);
+	for (unsigned i = 0; i < base.size(); i++)
+	{
+		base[i].draw();
+	}
     
     glPopMatrix();
     
