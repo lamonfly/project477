@@ -44,17 +44,17 @@ pendulum::pendulum(float x, float y, float z, int number, float nAngle)
 	index = number;
 }
 
-// Euler to Calculate next frame
+// Euler integration to Calculate next frame
 void pendulum::calculatePosition()
 {
-	// set new omega and theta if pendulum is playing
+	// set new angular velocity and angle if pendulum is playing
 	if (play){
-		// For a small theta it is approximated with theta
+		// For a small angle it is approximated with angle
 		if (angle < 0.05 && angle > -0.05)
-			aVel -= timeStep * (((GRAVITY / ropeLength)*angle) + airDrag * aVel*abs(aVel));
+			aVel -= timeStep * (GRAVITY*angle + airDrag * aVel*abs(aVel));
 
 		else
-			aVel -= timeStep * ((GRAVITY / ropeLength)*sin(angle * M_PI / 180) + airDrag * aVel*abs(aVel));
+			aVel -= timeStep * (GRAVITY*sin(angle * M_PI / 180) + airDrag * aVel*abs(aVel));
 
 		angle += timeStep * aVel;
 	}

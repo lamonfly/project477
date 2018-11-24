@@ -18,7 +18,7 @@ void collision(pendulum& p1, pendulum& p2) {
 	float Omega1 = p1.getAVel();
 	float Omega2 = p2.getAVel();
 
-	// Force at same direction = nothing
+	// Initial position collison to be ignored
 	if (p1.getAngle() == p2.getAngle() && p1.getAVel() == p2.getAVel() && p1.calDir() == p2.calDir()){
 		return;
 	}
@@ -40,7 +40,12 @@ void collision(pendulum& p1, pendulum& p2) {
 		// if p1 is stationary
 		else if (p1.calDir() == 0){
 			// Move them apart
-			p1.setAngle(p1.getAngle() + (p2.getAngle() - p1.getAngle()));
+			if (abs(p2.calDir())) {
+				p2.setAngle(p2.getAngle() + (p1.getAngle() - p2.getAngle()));
+			}
+			else {
+				p1.setAngle(p1.getAngle() + (p2.getAngle() - p1.getAngle()));
+			}
 
 			// Material here
 			p1.setAVel(Omega2);
@@ -50,7 +55,12 @@ void collision(pendulum& p1, pendulum& p2) {
 		// if p2 is stationary
 		else if (p2.calDir() == 0){
 			// Move them apart
-			p2.setAngle(p2.getAngle() + (p1.getAngle() - p2.getAngle()));
+			if (abs(p1.calDir())) {
+				p1.setAngle(p1.getAngle() + (p2.getAngle() - p1.getAngle()));
+			}
+			else {
+				p2.setAngle(p2.getAngle() + (p1.getAngle() - p2.getAngle()));
+			}
 
 			// Material here
 			p1.setAVel(Omega2);
