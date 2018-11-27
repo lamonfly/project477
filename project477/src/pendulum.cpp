@@ -13,6 +13,9 @@ pendulum::pendulum()
 	radius = 0.4f;
 	mass = 10.0;
 
+	posX = pos.x;
+	posY = pos.y;
+
 	// 0.47 sphere drag
 	// 0.0011839 density of air at 25C
 	airDrag = (0.47 / (2 * mass))*0.0011839*M_PI*(radius*radius)*ropeLength;
@@ -34,6 +37,9 @@ pendulum::pendulum(float x, float y, float z, int number, float nAngle)
 	ropeLength = 5;
 	radius = 0.4f;
 	mass = 10.0;
+
+	posX = x;
+	posY = y;
 
 	// 0.47 sphere drag
 	// 0.0011839 density of air at 25C
@@ -66,7 +72,114 @@ void pendulum::calculatePosition()
 	pos.y = -ropeLength * cos(angle * M_PI/180);
 	pos.x = (ropeLength*sin(angle * M_PI / 180) + (2 * radius*index));
 }
+void pendulum::drawColumn() {
+	//Start of the stand
+	posX = -1.2;
 
+	glPushMatrix();
+	glColor3f(0.1, 0.1, 0.1);
+	glTranslatef(posX, -0.1, 1.8);
+	glutSolidSphere(radius, 30.0f, 30.0f);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslatef(posX, -0.25, -2.2);
+	glutSolidSphere(radius, 30.0f, 30.0f);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslatef(posX, 0, 1.8);
+	glRotatef(90, 1, 0, 0);
+	gluCylinder(gluNewQuadric(), 0.3f, 0.3f, 6, 15.0f, 15.0f);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslatef(posX, -0.15, -2.2);
+	glRotatef(90, 1, 0, 0);
+	gluCylinder(gluNewQuadric(), 0.3f, 0.3f, 6, 15.0f, 15.0f);
+	glPopMatrix();
+
+
+	glPushMatrix();
+	glTranslatef(posX, -6.3, -2.6);
+	glRotatef(45, 0, 0, 1);
+	gluCylinder(gluNewQuadric(), 0.7f, 0.7f, 5, 4, 4);
+	glPopMatrix();
+
+	//End of the stand
+	posX = 1.2;
+
+	glPushMatrix();
+	glTranslatef(posX + (2 * radius*index), -0.1, 1.8);
+	glutSolidSphere(radius, 30.0f, 30.0f);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslatef(posX + (2 * radius*index), -0.25, -2.2);
+	glutSolidSphere(radius, 30.0f, 30.0f);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslatef(posX + (2 * radius*index), 0, 1.8);
+	glRotatef(90, 1, 0, 0);
+	gluCylinder(gluNewQuadric(), 0.3f, 0.3f, 6, 15.0f, 15.0f);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslatef(posX + (2 * radius*index), -0.15, -2.2);
+	glRotatef(90, 1, 0, 0);
+	gluCylinder(gluNewQuadric(), 0.3f, 0.3f, 6, 15.0f, 15.0f);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslatef(posX + (2 * radius*index), -6.3, -2.6);
+	glRotatef(45, 0, 0, 1);
+	gluCylinder(gluNewQuadric(), 0.7f, 0.7f, 5, 4, 4);
+	glPopMatrix();
+
+
+}
+void pendulum::drawStand() {
+	posX = -1;
+	//Draw Stands
+	glPushMatrix();
+	glTranslatef(posX + (2 * radius*index), posY - 0.05, 1.80);
+	glRotatef(90, 0, 1, 0);
+	glColor3f(0.1, 0.1, 0.1);
+	gluCylinder(gluNewQuadric(), 0.3f, 0.3f, 2, 10.0f, 10.0f);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslatef(posX + (2 * radius*index), posY - 0.2, -2.2);
+	glRotatef(90, 0, 1, 0);
+	gluCylinder(gluNewQuadric(), 0.3f, 0.3f, 2, 10.0f, 10.0f);
+	glPopMatrix();
+
+	posX = -1.7;
+	glPushMatrix();
+	glTranslatef(posX + (2 * radius*index), -6.8, 2.4);
+	glRectf(0, 0, 3.4, 1);
+	glPopMatrix();
+
+	posX = -1.7;
+	glPushMatrix();
+	glTranslatef(posX + (2 * radius*index), -6.8, -2.6);
+	glRectf(0, 0, 3.4, 1);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslatef(posX + (2 * radius*index), -5.8, -2.6);
+	glRotatef(90, 1, 0, 0);
+	glRectf(0, 0, 3.4, 5);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslatef(posX + (2 * radius*index), -6.8, -2.6);
+	glRotatef(90, 1, 0, 0);
+	glRectf(0, 0, 3.4, 5);
+	glPopMatrix();
+
+}
 // Draw each sphere and rope new positions
 void pendulum::draw()
 {
@@ -76,11 +189,13 @@ void pendulum::draw()
 	// Add texture or color here
 
 	//Draw sphere
+	glColor3f(0.5, 0.5, 0.5);
 	glTranslatef(pos.x, pos.y, 0.0);
 	glRotatef(angle, 0.0, 0.0, 1.0);
 	glutSolidSphere(radius, 30.0f, 30.0f);
 
 	//Draw rope
+	glColor3f(0.1, 0.1, 0.1);
 	glRotatef(-70.0f, 1.0f, 0.0f, 0.0f);
 	glTranslatef(0.0, 0.0, 0.0);
 	gluCylinder(gluNewQuadric(), 0.025f, 0.025f, ropeLength, 15.0f, 15.0f);

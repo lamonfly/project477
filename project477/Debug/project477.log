@@ -1,10 +1,4 @@
-﻿  Camera.cpp
-c:\users\su ming\project477\project477\src\camera.cpp(208): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\su ming\project477\project477\src\camera.cpp(217): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\su ming\project477\project477\src\camera.cpp(226): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\su ming\project477\project477\src\camera.cpp(235): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\su ming\project477\project477\src\camera.cpp(244): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\su ming\project477\project477\src\camera.cpp(253): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\su ming\project477\project477\src\camera.cpp(262): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\su ming\project477\project477\src\camera.cpp(271): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-  project477.vcxproj -> C:\Users\Su Ming\project477\project477\Debug\Project477.exe
+﻿  Main.cpp
+c:\users\vong\documents\github\project477\project477\src\pendulum.h(41): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+c:\users\vong\documents\github\project477\project477\src\main.cpp(316): warning C4060: switch statement contains no 'case' or 'default' labels
+  project477.vcxproj -> C:\Users\Vong\Documents\GitHub\project477\project477\Debug\Project477.exe

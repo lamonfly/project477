@@ -31,6 +31,9 @@ private:
 
 	float index;
 
+	float posX;
+	float posY;
+
 public:
 	pendulum();
 	pendulum(float x, float y, float z, int number, float nangle);
@@ -46,6 +49,8 @@ public:
 	void setAngle(float nangle);
 	void setAVel(float nVel);
 	void setPlay(bool p);
+	void drawStand();
+	void drawColumn();
 };
 
 #endif // PENDULUM_H_INCLUDED

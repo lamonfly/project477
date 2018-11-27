@@ -421,6 +421,8 @@ void display()
 	for (unsigned i = 0; i < base.size(); i++)
 	{
 		base[i].draw();
+		base[i].drawStand();
+		base[base.size() - 1].drawColumn();
 	}
 	collider(base);
     
