@@ -1,8 +1,10 @@
-﻿  Main.cpp
-c:\users\vong\desktop\project477\project477\src\pendulum.h(38): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-c:\users\vong\desktop\project477\project477\src\main.cpp(319): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\vong\desktop\project477\project477\src\main.cpp(326): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\vong\desktop\project477\project477\src\main.cpp(360): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\vong\desktop\project477\project477\src\main.cpp(380): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-c:\users\vong\desktop\project477\project477\src\main.cpp(389): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-  project477.vcxproj -> C:\Users\Vong\Desktop\project477\project477\Debug\Project477.exe
+﻿  Camera.cpp
+c:\users\su ming\project477\project477\src\camera.cpp(208): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\su ming\project477\project477\src\camera.cpp(217): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\su ming\project477\project477\src\camera.cpp(226): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\su ming\project477\project477\src\camera.cpp(235): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\su ming\project477\project477\src\camera.cpp(244): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\su ming\project477\project477\src\camera.cpp(253): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\su ming\project477\project477\src\camera.cpp(262): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\su ming\project477\project477\src\camera.cpp(271): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+  project477.vcxproj -> C:\Users\Su Ming\project477\project477\Debug\Project477.exe

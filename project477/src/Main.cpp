@@ -14,6 +14,7 @@
 #include <vector>
 #include "pendulum.h"
 #include "collider.h"
+#include "Camera.h"
 
 using namespace std;
 
@@ -34,19 +35,12 @@ double prev_z = 0;
 double _matrix[16];
 double _matrixI[16];
 
-/* Mouse Interface  */
-int _mouseX = 0;		/* mouse control variables */
-int _mouseY = 0;
-bool _mouseLeft = false;
-bool _mouseMiddle = false;
-bool _mouseRight = false;
-
-double _dragPosX = 0.0;
-double _dragPosY = 0.0;
-double _dragPosZ = 0.0;
+//Animation is playing
+bool anim_playing = false;
 
 // Pendulums
 vector<pendulum> base;
+Camera camera;
 
 double vlen(double x, double y, double z)
 {
@@ -178,18 +172,18 @@ void pos(double *px, double *py, double *pz, const int x, const int y,
 
 void getMatrix()
 {
-    glGetDoublev(GL_MODELVIEW_MATRIX, _matrix);
-    invertMatrix(_matrix, _matrixI);
+   glGetDoublev(GL_MODELVIEW_MATRIX, _matrix);
+   invertMatrix(_matrix, _matrixI);
 }
 
 void init()
 {
-	glMatrixMode(GL_PROJECTION);
-	glLoadIdentity();
-	gluPerspective(fovy, (double)width / (double)height, _zNear, _zFar);
+	//glMatrixMode(GL_PROJECTION);
+	//glLoadIdentity();
+	//gluPerspective(fovy, (double)width / (double)height, _zNear, _zFar);
 
-	glMatrixMode(GL_MODELVIEW);
-	glLoadIdentity();
+	//glMatrixMode(GL_MODELVIEW);
+	//glLoadIdentity();
 
       //Light values and coordinates
      GLfloat ambientLight[] = { 0.3f, 0.3f, 0.3f, 1.0f };
@@ -220,12 +214,7 @@ void init()
      getMatrix(); //Init matrix
 
      //Translate camera
-     glPushMatrix();
-     glLoadIdentity();
-     glTranslatef(0,0,-5.0);
-     glMultMatrixd(_matrix);
-     getMatrix();
-     glPopMatrix();
+	 camera.init(_matrix, _matrixI);
 
 	 //Initialize ball
 	 base.push_back(pendulum(0.0, 0.0, 0.0, base.size(), 0.0));
@@ -261,22 +250,46 @@ void handleKeyPress(unsigned char key, int x, int y)
         case '+':
 			// Add a pendulum ball
 			base.push_back(pendulum(0.0, 0.0, 0.0, base.size(), 0.0));
+			camera.moveRight(_matrix, _matrixI);
+			camera.zoomout(_matrix, _matrixI, 0.5);
             break;
 		case '-':
 			// Remove a pendulum ball
 			base.pop_back();
+			camera.moveLeft(_matrix, _matrixI);
+			camera.zoomin(_matrix, _matrixI, 0.5);
 			break;
 		case '1': {
-			float angle = base[0].getAngle();
-			angle--;
-			base[0].setAngle(angle);
+			if (anim_playing == false)
+			{
+				float angle = base[0].getAngle();
+				angle--;
+				base[0].setAngle(angle);
+			}
 			break;
 		}
 		case 'p' :
-			base[0].setPlay(true);
+			if (anim_playing == false)
+			{
+				base[0].setPlay(true);
+				anim_playing = true;
+			}
+			else
+			{
+				base[0].setPlay(false);
+				anim_playing = false;
+			}
 			break;
         case 'q':
             exit(0);
+		case 't':
+			camera.moveUp(_matrix, _matrixI);
+		case 'h':
+			camera.moveRight(_matrix, _matrixI);
+		case 'g':
+			camera.moveDown(_matrix, _matrixI);
+		case 'f':
+			camera.moveLeft(_matrix, _matrixI);
     }
 }
 
@@ -285,53 +298,45 @@ void mouseEvent(int button, int state, int x, int y)
 {
     int viewport[4];
 
-    _mouseX = x;
-    _mouseY = y;
+   // _mouseX = x;
+   // _mouseY = y;
 
     if (state == GLUT_UP)
 	switch (button) {
-    case GLUT_LEFT_BUTTON:
+    //case GLUT_LEFT_BUTTON:
         //Realease myDefMesh.mySkeleton.release();
-            _mouseLeft =false;
-            break;
-	case GLUT_MIDDLE_BUTTON:
-	    _mouseMiddle = false;
-	    break;
-	case GLUT_RIGHT_BUTTON:
-	    _mouseRight = false;
-	    break;
+            //_mouseLeft =false;
+           // break;
+	//case GLUT_MIDDLE_BUTTON:
+	   // _mouseMiddle = false;
+	   // break;
+	//case GLUT_RIGHT_BUTTON:
+	   // _mouseRight = false;
+	   // break;
     } else
 	switch (button) {
-	case GLUT_LEFT_BUTTON:
+	//case GLUT_LEFT_BUTTON:
         // Select of realease myDefMesh.mySkeleton.selectOrReleaseJoint();
-        _mouseLeft = true;
-        break;
-	case GLUT_MIDDLE_BUTTON:
-	    _mouseMiddle = true;
-	    break;
-	case GLUT_RIGHT_BUTTON:
-	    _mouseRight = true;
+        //_mouseLeft = true;
+        //break;
+	//case GLUT_MIDDLE_BUTTON:
+	   // _mouseMiddle = true;
+	    //break;
+	//case GLUT_RIGHT_BUTTON:
+	    //_mouseRight = true;
 	    break;
     case 4:         //Zoomout
-        glLoadIdentity();
-        glTranslatef(0,0,-0.1);
-        glMultMatrixd(_matrix);
-        getMatrix();
-        glutPostRedisplay();
+		camera.zoomout(_matrix, _matrixI);
         break;
     case 3:         //Zoomin
-        glLoadIdentity();
-        glTranslatef(0,0,0.1);
-        glMultMatrixd(_matrix);
-        getMatrix();
-        glutPostRedisplay();
+		camera.zoomin(_matrix, _matrixI);
         break;
     default:
         break;
 	}
 
     glGetIntegerv(GL_VIEWPORT, viewport);
-    pos(&_dragPosX, &_dragPosY, &_dragPosZ, x, y, viewport);
+   // pos(&_dragPosX, &_dragPosY, &_dragPosZ, x, y, viewport);
 }
 
 void mousePassiveFunc(int x, int y)
@@ -341,7 +346,7 @@ void mousePassiveFunc(int x, int y)
 void mouseMoveEvent(int x, int y)
 {
 	// To do if nothing selected
-    bool changed = false;
+    /*bool changed = false;
 
     const int dx = x - _mouseX;
     const int dy = y - _mouseY;
@@ -400,7 +405,7 @@ void mouseMoveEvent(int x, int y)
     if (changed) {
         getMatrix();
         glutPostRedisplay();
-    }
+    }*/
 }
 void display()
 {
