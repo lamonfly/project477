@@ -36,6 +36,10 @@ private:
 	float posX;
 	float posY;
 
+	float rcolor = 0.5;
+	float gcolor = 0.5;
+	float bcolor = 0.5;
+
 public:
 	pendulum();
 	pendulum(float x, float y, float z, int number, float nangle);
@@ -50,10 +54,14 @@ public:
 	void draw();
 	int calDir();
 	void setAngle(float nangle);
+	void setAAngle(float nangle);
 	void setAVel(float nVel);
 	void setPlay(bool p);
 	void drawStand();
 	void drawColumn();
+	float getAAngle();
+	void setSelectedColor();
+	void setUnselectedColor();
 };
 
 #endif // PENDULUM_H_INCLUDED

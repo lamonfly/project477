@@ -1,6 +1,9 @@
+
+#include <iostream>
 #include "pendulum.h"
 
-
+int highestAngle;
+float highestSpeed = 20;
 // Default constructor
 pendulum::pendulum()
 {
@@ -53,16 +56,53 @@ pendulum::pendulum(float x, float y, float z, int number, float nAngle)
 // Euler integration to Calculate next frame
 void pendulum::calculatePosition()
 {
+
 	// set new angular velocity and angle if pendulum is playing
 	if (play){
 		// For a small angle it is approximated with angle
-		if (angle < 0.05 && angle > -0.05)
-			aVel -= timeStep * (GRAVITY*angle + airDrag * aVel*abs(aVel));
-
-		else
-			aVel -= timeStep * (GRAVITY*sin(angle * M_PI / 180) + airDrag * aVel*abs(aVel));
-
-		angle += timeStep * aVel;
+		if (angle <= abs(highestAngle) && angle >= highestAngle) {
+			if (angle < 0.05 && angle > -0.05) {
+				aVel -= timeStep * (GRAVITY*angle + airDrag * aVel*abs(aVel));
+				if (aVel > highestSpeed) {
+					aVel = highestSpeed;
+				}
+				else if (aVel < -highestSpeed) {
+					aVel = -highestSpeed;
+				}
+			}
+			else {
+				aVel -= timeStep * (GRAVITY*sin(angle * M_PI / 180) + airDrag * aVel*abs(aVel));
+				if (aVel > highestSpeed) {
+					aVel = highestSpeed;
+				}
+				else if (aVel < -highestSpeed) {
+					aVel = -highestSpeed;
+				}
+			}
+			angle += timeStep * aVel;
+		}
+		else {
+			if (angle > abs(highestAngle)) {
+				angle = abs(highestAngle);
+				aVel -= timeStep * (GRAVITY*sin(angle * M_PI / 180) + airDrag * aVel*abs(aVel));
+				if (aVel > highestSpeed) {
+					aVel = highestSpeed;
+				}
+				else if (aVel < -highestSpeed) {
+					aVel = -highestSpeed;
+				}
+			}
+			else if (angle < highestAngle) {
+				angle = highestAngle;
+				aVel -= timeStep * (GRAVITY*sin(angle * M_PI / 180) + airDrag * aVel*abs(aVel));
+				if (aVel > highestSpeed) {
+					aVel = highestSpeed;
+				}
+				else if (aVel < -highestSpeed) {
+					aVel = -highestSpeed;
+				}
+			}
+		}
 	}
 
 	// height
@@ -71,6 +111,17 @@ void pendulum::calculatePosition()
 	// Update new values
 	pos.y = -ropeLength * cos(angle * M_PI/180);
 	pos.x = (ropeLength*sin(angle * M_PI / 180) + (2 * radius*index));
+}
+void pendulum::setSelectedColor() {
+	rcolor = 1;
+	gcolor = 0;
+	bcolor = 0;
+}
+
+void pendulum::setUnselectedColor() {
+	rcolor = 0.5;
+	gcolor = 0.5;
+	bcolor = 0.5;
 }
 void pendulum::drawColumn() {
 	//Start of the stand
@@ -183,12 +234,11 @@ void pendulum::drawStand() {
 // Draw each sphere and rope new positions
 void pendulum::draw()
 {
-
 	glPushMatrix();
 	// Add texture or color here
 
 	//Draw sphere
-	glColor3f(0.5, 0.5, 0.5);
+	glColor3f(rcolor, gcolor, bcolor);
 	glTranslatef(pos.x, pos.y, 0.0);
 	glRotatef(angle, 0.0, 0.0, 1.0);
 	glutSolidSphere(radius, 30.0f, 30.0f);
@@ -221,6 +271,13 @@ int pendulum::calDir()
 	else{
 		return 0;
 	}
+}
+float pendulum::getAAngle() {
+	return highestAngle;
+}
+
+void pendulum::setAAngle(float nAngle) {
+	highestAngle = nAngle;
 }
 
 void pendulum::setAngle(float nAngle) {

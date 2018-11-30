@@ -1,4 +1,1 @@
-﻿  Main.cpp
-c:\users\vong\documents\github\project477\project477\src\pendulum.h(41): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-c:\users\vong\documents\github\project477\project477\src\main.cpp(316): warning C4060: switch statement contains no 'case' or 'default' labels
-  project477.vcxproj -> C:\Users\Vong\Documents\GitHub\project477\project477\Debug\Project477.exe
+﻿  project477.vcxproj -> C:\Users\Vong\Documents\GitHub\project477\project477\Debug\Project477.exe
