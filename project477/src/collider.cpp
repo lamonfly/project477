@@ -33,8 +33,8 @@ void collision(pendulum& p1, pendulum& p2) {
 			p1.setAngle(p1.getAngle() + (p2.getAngle() - p1.getAngle()));
 
 			// Material here
-			p1.setAVel(tempOmega2);
-			p2.setAVel(tempOmega1);
+			p1.setAVel(tempOmega2 * p1.getDampen());
+			p2.setAVel(tempOmega1 * p2.getDampen());
 		}
 
 		// if p1 is stationary
@@ -48,8 +48,8 @@ void collision(pendulum& p1, pendulum& p2) {
 			}
 
 			// Material here
-			p1.setAVel(Omega2);
-			p2.setAVel(Omega1);
+			p1.setAVel(Omega2 * p1.getDampen());
+			p2.setAVel(Omega1 * p2.getDampen());
 		}
 
 		// if p2 is stationary
@@ -63,8 +63,8 @@ void collision(pendulum& p1, pendulum& p2) {
 			}
 
 			// Material here
-			p1.setAVel(Omega2);
-			p2.setAVel(Omega1);
+			p1.setAVel(Omega2 * p1.getDampen());
+			p2.setAVel(Omega1 * p2.getDampen());
 		}
 	}
 }

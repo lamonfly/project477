@@ -418,13 +418,17 @@ void display()
 	// Draw other things
 
 	// Draw pendulum
+	for (unsigned i = 0; i < base.size(); i++) {
+		base[i].calculatePosition();
+	}
+	collider(base);
+
 	for (unsigned i = 0; i < base.size(); i++)
 	{
 		base[i].draw();
 		base[i].drawStand();
 		base[base.size() - 1].drawColumn();
 	}
-	collider(base);
     
     glutSwapBuffers();
 }

@@ -183,7 +183,6 @@ void pendulum::drawStand() {
 // Draw each sphere and rope new positions
 void pendulum::draw()
 {
-	calculatePosition();
 
 	glPushMatrix();
 	// Add texture or color here

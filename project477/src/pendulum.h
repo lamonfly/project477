@@ -8,7 +8,9 @@
 #define GRAVITY 9.82
 
 // Timestep for Euler
-static const float timeStep = 0.1f;
+static float timeStep = 0.1f;
+// Dampening value
+static float dampen = 1.0f;
 static bool play = false;
 
 class pendulum
@@ -42,6 +44,7 @@ public:
 	float getAngle() { return angle; };
 	float getRadius() { return radius; };
 	float getAVel() { return aVel; };
+	float getDampen() { return dampen; };
 
 	void calculatePosition();
 	void draw();
