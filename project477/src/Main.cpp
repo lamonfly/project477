@@ -299,11 +299,13 @@ void handleKeyPress(unsigned char key, int x, int y)
 		if (anim_playing == false)
 		{
 			base[index].setPlay(true);
+			cout << base[index].getPlay() << endl;
 			anim_playing = true;
 		}
 		else
 		{
 			base[index].setPlay(false);
+			cout << base[index].getPlay() << endl;
 			anim_playing = false;
 		}
 		break;

@@ -2,8 +2,13 @@
 #include <iostream>
 #include "pendulum.h"
 
-int highestAngle;
-float highestSpeed = 20;
+// Timestep for Euler
+float timeStep = 0.1f;
+// Dampening value
+float dampen = 1.0f;
+bool play = false;
+
+
 // Default constructor
 pendulum::pendulum()
 {

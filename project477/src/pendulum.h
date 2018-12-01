@@ -8,10 +8,10 @@
 #define GRAVITY 9.82
 
 // Timestep for Euler
-static float timeStep = 0.1f;
+extern float timeStep;
 // Dampening value
-static float dampen = 1.0f;
-static bool play = false;
+extern float dampen;
+extern bool play;
 
 class pendulum
 {
