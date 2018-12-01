@@ -254,7 +254,6 @@ void handleKeyPress(unsigned char key, int x, int y)
 	case 'z':
 		if (index > 0) {
 			index -= 1;
-			cout << index;
 			base[index].setSelectedColor();
 			base[index + 1].setUnselectedColor();
 		}
@@ -262,7 +261,6 @@ void handleKeyPress(unsigned char key, int x, int y)
 	case 'x':
 		if (index < base.size()-1) {
 			index += 1;
-			cout << index;
 			base[index].setSelectedColor();
 			base[index - 1].setUnselectedColor();
 		}

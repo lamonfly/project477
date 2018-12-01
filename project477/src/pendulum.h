@@ -33,9 +33,6 @@ private:
 
 	float index;
 
-	float posX;
-	float posY;
-
 	float rcolor = 0.5;
 	float gcolor = 0.5;
 	float bcolor = 0.5;
@@ -49,17 +46,16 @@ public:
 	float getRadius() { return radius; };
 	float getAVel() { return aVel; };
 	float getDampen() { return dampen; };
+	bool getPlay() { return play; };
 
 	void calculatePosition();
 	void draw();
 	int calDir();
 	void setAngle(float nangle);
-	void setAAngle(float nangle);
 	void setAVel(float nVel);
 	void setPlay(bool p);
 	void drawStand();
 	void drawColumn();
-	float getAAngle();
 	void setSelectedColor();
 	void setUnselectedColor();
 };

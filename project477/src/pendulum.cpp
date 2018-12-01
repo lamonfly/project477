@@ -16,9 +16,6 @@ pendulum::pendulum()
 	radius = 0.4f;
 	mass = 10.0;
 
-	posX = pos.x;
-	posY = pos.y;
-
 	// 0.47 sphere drag
 	// 0.0011839 density of air at 25C
 	airDrag = (0.47 / (2 * mass))*0.0011839*M_PI*(radius*radius)*ropeLength;
@@ -40,9 +37,6 @@ pendulum::pendulum(float x, float y, float z, int number, float nAngle)
 	ropeLength = 5;
 	radius = 0.4f;
 	mass = 10.0;
-
-	posX = x;
-	posY = y;
 
 	// 0.47 sphere drag
 	// 0.0011839 density of air at 25C
@@ -88,7 +82,7 @@ void pendulum::setUnselectedColor() {
 }
 void pendulum::drawColumn() {
 	//Start of the stand
-	posX = -1.2;
+	float posX = -1.2;
 
 	glPushMatrix();
 	glColor3f(0.1, 0.1, 0.1);
@@ -154,17 +148,17 @@ void pendulum::drawColumn() {
 
 }
 void pendulum::drawStand() {
-	posX = -1;
+	float posX = -1;
 	//Draw Stands
 	glPushMatrix();
-	glTranslatef(posX + (2 * radius*index), posY - 0.05, 1.80);
+	glTranslatef(posX + (2 * radius*index), -0.05, 1.80);
 	glRotatef(90, 0, 1, 0);
 	glColor3f(0.1, 0.1, 0.1);
 	gluCylinder(gluNewQuadric(), 0.3f, 0.3f, 2, 10.0f, 10.0f);
 	glPopMatrix();
 
 	glPushMatrix();
-	glTranslatef(posX + (2 * radius*index), posY - 0.2, -2.2);
+	glTranslatef(posX + (2 * radius*index), -0.2, -2.2);
 	glRotatef(90, 0, 1, 0);
 	gluCylinder(gluNewQuadric(), 0.3f, 0.3f, 2, 10.0f, 10.0f);
 	glPopMatrix();
@@ -234,13 +228,6 @@ int pendulum::calDir()
 	else{
 		return 0;
 	}
-}
-float pendulum::getAAngle() {
-	return highestAngle;
-}
-
-void pendulum::setAAngle(float nAngle) {
-	highestAngle = nAngle;
 }
 
 void pendulum::setAngle(float nAngle) {

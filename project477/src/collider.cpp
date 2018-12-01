@@ -18,6 +18,16 @@ void collision(pendulum& p1, pendulum& p2) {
 	float Omega1 = p1.getAVel();
 	float Omega2 = p2.getAVel();
 
+	// nothing moving
+	if (!p1.getPlay()) {
+		if (abs(p1.getAngle()) > abs(p2.getAngle())) {
+			p2.setAngle(p2.getAngle() + (p1.getAngle() - p2.getAngle()));
+		}
+		else {
+			p1.setAngle(p1.getAngle() + (p2.getAngle() - p1.getAngle()));
+		}
+	}
+
 	// p1 and p2 not stationary
 	if (p1.calDir() != 0 && p2.calDir() != 0){
 		// Change their omega as they hit eachother
@@ -38,9 +48,6 @@ void collision(pendulum& p1, pendulum& p2) {
 	else if (p1.calDir() == 0){
 		// Move them apart
 		if (abs(p2.calDir())) {
-			p2.setAngle(p2.getAngle() + (p1.getAngle() - p2.getAngle()));
-		}
-		else if (p1.getAngle() > p2.getAngle() && p2.calDir() == 0) {
 			p2.setAngle(p2.getAngle() + (p1.getAngle() - p2.getAngle()));
 		}
 		else {
