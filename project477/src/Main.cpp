@@ -285,7 +285,15 @@ void handleKeyPress(unsigned char key, int x, int y)
 			float angle = base[index].getAngle();
 			angle--;
 			base[index].setAngle(angle);
-			base[index].setAAngle(angle);
+		}
+		break;
+	}
+	case '2': {
+		if (anim_playing == false)
+		{
+			float angle = base[index].getAngle();
+			angle++;
+			base[index].setAngle(angle);
 		}
 		break;
 	}

@@ -56,60 +56,23 @@ pendulum::pendulum(float x, float y, float z, int number, float nAngle)
 // Euler integration to Calculate next frame
 void pendulum::calculatePosition()
 {
-
 	// set new angular velocity and angle if pendulum is playing
-	if (play){
+	if (play) {
 		// For a small angle it is approximated with angle
-		if (angle <= abs(highestAngle) && angle >= highestAngle) {
-			if (angle < 0.05 && angle > -0.05) {
-				aVel -= timeStep * (GRAVITY*angle + airDrag * aVel*abs(aVel));
-				if (aVel > highestSpeed) {
-					aVel = highestSpeed;
-				}
-				else if (aVel < -highestSpeed) {
-					aVel = -highestSpeed;
-				}
-			}
-			else {
-				aVel -= timeStep * (GRAVITY*sin(angle * M_PI / 180) + airDrag * aVel*abs(aVel));
-				if (aVel > highestSpeed) {
-					aVel = highestSpeed;
-				}
-				else if (aVel < -highestSpeed) {
-					aVel = -highestSpeed;
-				}
-			}
-			angle += timeStep * aVel;
-		}
-		else {
-			if (angle > abs(highestAngle)) {
-				angle = abs(highestAngle);
-				aVel -= timeStep * (GRAVITY*sin(angle * M_PI / 180) + airDrag * aVel*abs(aVel));
-				if (aVel > highestSpeed) {
-					aVel = highestSpeed;
-				}
-				else if (aVel < -highestSpeed) {
-					aVel = -highestSpeed;
-				}
-			}
-			else if (angle < highestAngle) {
-				angle = highestAngle;
-				aVel -= timeStep * (GRAVITY*sin(angle * M_PI / 180) + airDrag * aVel*abs(aVel));
-				if (aVel > highestSpeed) {
-					aVel = highestSpeed;
-				}
-				else if (aVel < -highestSpeed) {
-					aVel = -highestSpeed;
-				}
-			}
-		}
+		if (angle < 0.05 && angle > -0.05)
+			aVel -= timeStep * (GRAVITY*angle + airDrag * aVel*abs(aVel));
+
+		else
+			aVel -= timeStep * (GRAVITY*sin(angle * M_PI / 180) + airDrag * aVel*abs(aVel));
+
+		angle += timeStep * aVel;
 	}
 
 	// height
 	height = ropeLength * (1 - cos(angle * M_PI / 180));
 
 	// Update new values
-	pos.y = -ropeLength * cos(angle * M_PI/180);
+	pos.y = -ropeLength * cos(angle * M_PI / 180);
 	pos.x = (ropeLength*sin(angle * M_PI / 180) + (2 * radius*index));
 }
 void pendulum::setSelectedColor() {
