@@ -2,7 +2,7 @@
 
 // Check if two pendulum touch eachother
 void collider(vector<pendulum>& base) {
-	float touchRadius = 2 * base[0].getRadius();
+	float touchRadius = 2 * base[0].getRadius() + 0.01f;
 
 	for (unsigned i = 0; i < base.size() - 1; i++) {
 		// Send velocity to next sphere
@@ -33,19 +33,14 @@ void collision(pendulum& p1, pendulum& p2) {
 	}
 
 	else {
+		// if p1 and p2 are mobile
 		if (p1.calDir() != 0 && p2.calDir() != 0) {
-			// Change their omega as they hit eachother
-			float tempOmega1 = Omega1 * ((p1.calDir() * p1.calDir() != p2.calDir()) + (1 * p1.calDir() == p2.calDir()));
-			float tempOmega2 = Omega2 * ((p2.calDir() * p1.calDir() != p2.calDir()) + (1 * p1.calDir() == p2.calDir()));
-
 			// Move them apart
 			p1.setAngle(p1.getAngle() + (p2.getAngle() - p1.getAngle()));
 
-			if (p1.calDir() != p2.calDir()) {
-				// Material here
-				p1.setAVel(tempOmega2 * p1.getDampen());
-				p2.setAVel(tempOmega1 * p2.getDampen());
-			}
+			// Material here
+			p1.setAVel(Omega2 * p1.getDampen());
+			p2.setAVel(Omega1 * p2.getDampen());
 		}
 
 		// if p1 is stationary
