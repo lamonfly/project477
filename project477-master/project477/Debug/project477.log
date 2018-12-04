@@ -1,0 +1,15 @@
+﻿  Camera.cpp
+d:\documents\documents\school\university\fall 2018\comp 477\project477-master\projectmaster\project477-master\project477\src\camera.cpp(529): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+d:\documents\documents\school\university\fall 2018\comp 477\project477-master\projectmaster\project477-master\project477\src\camera.cpp(547): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+d:\documents\documents\school\university\fall 2018\comp 477\project477-master\projectmaster\project477-master\project477\src\camera.cpp(565): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+d:\documents\documents\school\university\fall 2018\comp 477\project477-master\projectmaster\project477-master\project477\src\camera.cpp(583): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+d:\documents\documents\school\university\fall 2018\comp 477\project477-master\projectmaster\project477-master\project477\src\camera.cpp(601): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+d:\documents\documents\school\university\fall 2018\comp 477\project477-master\projectmaster\project477-master\project477\src\camera.cpp(619): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+d:\documents\documents\school\university\fall 2018\comp 477\project477-master\projectmaster\project477-master\project477\src\camera.cpp(637): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+d:\documents\documents\school\university\fall 2018\comp 477\project477-master\projectmaster\project477-master\project477\src\camera.cpp(655): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+  Main.cpp
+d:\documents\documents\school\university\fall 2018\comp 477\project477-master\projectmaster\project477-master\project477\src\pendulum.h(44): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+d:\documents\documents\school\university\fall 2018\comp 477\project477-master\projectmaster\project477-master\project477\src\main.cpp(294): warning C4018: '<': signed/unsigned mismatch
+d:\documents\documents\school\university\fall 2018\comp 477\project477-master\projectmaster\project477-master\project477\src\main.cpp(384): warning C4060: switch statement contains no 'case' or 'default' labels
+  Generating Code...
+  project477.vcxproj -> D:\Documents\Documents\School\University\Fall 2018\Comp 477\project477-master\ProjectMaster\project477-master\project477\Debug\Project477.exe
