@@ -1,0 +1,221 @@
+﻿  Camera.cpp
+c:\users\live-\downloads\project477\project477-master\project477\src\camera.cpp(529): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\camera.cpp(547): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\camera.cpp(565): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\camera.cpp(583): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\camera.cpp(601): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\camera.cpp(619): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\camera.cpp(637): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\camera.cpp(655): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+  collider.cpp
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.h(44): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  glm.cpp
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(187): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: see declaration of 'strdup'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(234): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: see declaration of 'strdup'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(304): warning C4305: '=': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(305): warning C4305: '=': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(306): warning C4305: '=': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(308): warning C4305: '=': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(309): warning C4305: '=': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(310): warning C4305: '=': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(263): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: see declaration of 'strcpy'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(264): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(90): note: see declaration of 'strcat'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(267): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: see declaration of 'fopen'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(277): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(286): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(317): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: see declaration of 'strdup'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(321): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(329): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(331): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: see declaration of 'strdup'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(334): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(342): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(348): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(354): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(390): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: see declaration of 'strcpy'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(391): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(90): note: see declaration of 'strcat'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(395): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: see declaration of 'fopen'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(449): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(480): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(481): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: see declaration of 'strdup'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(500): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(504): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(505): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(506): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(509): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(513): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(515): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(516): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(519): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(523): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(525): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(526): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(529): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(535): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(536): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(539): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(600): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(609): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(616): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(623): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(632): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(648): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(652): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(655): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(658): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(663): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(673): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(678): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(682): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(688): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(701): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(705): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(708): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(713): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(725): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(727): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(729): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(733): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1197): note: see declaration of 'fscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(808): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(809): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(810): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(813): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(1013): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(1169): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(1176): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(1177): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(1227): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(1228): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(1235): warning C4305: '=': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(1237): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(1240): warning C4305: '=': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(1242): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(1245): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(1246): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(1309): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: see declaration of 'fopen'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(1318): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(536): note: see declaration of 'strdup'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(1430): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: see declaration of 'fopen'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(1793): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: see declaration of 'fopen'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(1814): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(1816): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+c:\users\live-\downloads\project477\project477-master\project477\src\glm.cpp(1818): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+  Main.cpp
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.h(44): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\main.cpp(294): warning C4018: '<': signed/unsigned mismatch
+c:\users\live-\downloads\project477\project477-master\project477\src\main.cpp(384): warning C4060: switch statement contains no 'case' or 'default' labels
+  pendulum.cpp
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.h(44): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(25): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(47): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(51): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(62): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(65): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(90): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(93): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(94): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(95): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(99): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(100): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(104): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(106): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(110): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(112): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(117): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(123): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(126): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(127): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(131): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(132): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(136): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(138): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(142): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(144): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(148): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(159): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(161): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(162): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(166): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(168): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(171): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(173): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(174): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(177): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(179): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(180): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(184): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(186): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(190): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(192): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(204): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(206): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(209): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(212): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+c:\users\live-\downloads\project477\project477-master\project477\src\pendulum.cpp(217): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+  simpleMath.cpp
+  Generating Code...
+  project477.vcxproj -> C:\Users\live-\Downloads\project477\project477-master\project477\Debug\Project477.exe
