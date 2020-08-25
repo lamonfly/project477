@@ -18,8 +18,8 @@ F = m a
 * Pendulum control
   * Z select pendulum sphere left
   * X select pendulum sphere right
-  * + add pendulum sphere
-  * - remove pendulum sphere
+  * \+ add pendulum sphere
+  * \- remove pendulum sphere
   * 2 increase selected sphere angle
   * 1 decrease selected sphere angle
   * play/pause
