@@ -9,6 +9,28 @@ The mass and the radius of the sphere will also be kept constant. However, the v
 
 F = m a
 
+### Controls
+* Physics
+  * D increase dampening
+  * S decrease dampening
+  * E increase simulation speed
+  * W decrease simulation speed
+* Pendulum control
+  * Z select pendulum sphere left
+  * X select pendulum sphere right
+  * + add pendulum sphere
+  * - remove pendulum sphere
+  * 2 increase selected sphere angle
+  * 1 decrease selected sphere angle
+  * play/pause
+  * R reset to initial state
+* Camera
+  * T move up
+  * H move right
+  * F move left
+  * G mode down
+  * O top view
+
 ### Demonstration
 In the video demos below, there will examples of how the Newton's cradle works in our project.
 
@@ -32,7 +54,7 @@ In this demo video above, the user can move two of the pendulums and then play t
 
 The user can also move the camera around for a better look or a top view.
 
-#### Members
+### Members
 * Tran Hai Vong Thang
 * Felix Brault
 * Marco D'Urbano
