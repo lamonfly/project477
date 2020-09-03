@@ -47,8 +47,7 @@ In the next example, the simulation shows that the user can swing 3 pendulums at
 The program also allows the user to increase the animation speed as well as the effects of damping.
 
 
-
-[![Project Demo 2](https://img.youtube.com/vVz7u4vmJ2c/0.jpg)](https://youtu.be/vVz7u4vmJ2c)
+[![Project Demo 2](https://img.youtube.com/vi/vVz7u4vmJ2c/0.jpg)](https://youtu.be/vVz7u4vmJ2c)
 
 In this demo video above, the user can move two of the pendulums and then play the animation.
 
